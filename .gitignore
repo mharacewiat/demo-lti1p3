@@ -11,3 +11,7 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+###> lti1p3 ###
+/config/keys/*.key
+###< lti1p3 ###
