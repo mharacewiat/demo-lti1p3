@@ -10,11 +10,11 @@ lti1p3:
             public_key: "file://%kernel.project_dir%/config/keys/public.key"
             private_key: "file://%kernel.project_dir%/config/keys/private.key"
             private_key_passphrase: ~
-#        toolKey:
-#            key_set_name: "toolSet"
-#            public_key: "file://%kernel.project_dir%/config/keys/tool/public.key"
-#            private_key: "file://%kernel.project_dir%/config/keys/tool/private.key"
-#            private_key_passphrase: ~
+        toolKey:
+            key_set_name: "toolSet"
+            public_key: "file://%kernel.project_dir%/config/keys/tool/public.key"
+            private_key: ~
+            private_key_passphrase: ~
     platforms:
         local:
             name: "Demo LTI 1.3 platform"
