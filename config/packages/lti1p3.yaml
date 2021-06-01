@@ -18,19 +18,19 @@ lti1p3:
     platforms:
         local:
             name: "Demo LTI 1.3 platform"
-            audience: "https://sds-demo-lti1p3.docker.localhost/platform"
-            oidc_authentication_url: "https://sds-demo-lti1p3.docker.localhost/lti1p3/oidc/authentication"
-            oauth2_access_token_url: "https://sds-demo-lti1p3.docker.localhost/lti1p3/auth/platformKey/token"
+            audience: "%application_host%/platform"
+            oidc_authentication_url: "%application_host%/lti1p3/oidc/authentication"
+            oauth2_access_token_url: "%application_host%/lti1p3/auth/platformKey/token"
     tools:
         ms:
             name: "Manual Scoring tool"
             audience: "https://sds-manual-scoring-be.docker.localhost/tool"
             oidc_initiation_url: "https://sds-manual-scoring-be.docker.localhost/lti1p3/oidc/initiation"
-            launch_url: "https://sds-manual-scoring-be.docker.localhost/api/v1/auth/lti1p3/launch"
+            launch_url: "https://sds-manual-scoring-be.docker.localhost/api/v1/lti1p3/launch"
             deep_linking_url: null
     registrations:
         ms:
-            client_id: "client_id"
+            client_id: "construct-1"
             platform: "local"
             tool: "ms"
             deployment_ids:
