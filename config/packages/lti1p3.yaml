@@ -24,9 +24,9 @@ lti1p3:
     tools:
         ms:
             name: "Manual Scoring tool"
-            audience: "https://sds-manual-scoring-be.docker.localhost/tool"
-            oidc_initiation_url: "https://sds-manual-scoring-be.docker.localhost/lti1p3/oidc/initiation"
-            launch_url: "https://sds-manual-scoring-be.docker.localhost/api/v1/lti1p3/launch"
+            audience: "%lti1p3.tool_host%/tool"
+            oidc_initiation_url: "%lti1p3.tool_host%/lti1p3/oidc/initiation"
+            launch_url: "%lti1p3.tool_host%/api/v1/lti1p3/launch"
             deep_linking_url: null
     registrations:
         ms:
