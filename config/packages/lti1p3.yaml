@@ -30,7 +30,7 @@ lti1p3:
             deep_linking_url: null
     registrations:
         ms:
-            client_id: "construct-1"
+            client_id: "qa"
             platform: "local"
             tool: "ms"
             deployment_ids:
@@ -38,4 +38,4 @@ lti1p3:
             platform_key_chain: "platformKey"
             tool_key_chain: null
             platform_jwks_url: null
-            tool_jwks_url: "http://sds-manual-scoring-be.docker.localhost/lti1p3/.well-known/jwks/toolSet.json"
+            tool_jwks_url: "%lti1p3.tool_host%/lti1p3/.well-known/jwks/toolSet.json"
