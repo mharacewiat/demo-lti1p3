@@ -7,6 +7,7 @@ parameters:
     application_host: '%env(resolve:APP_HOST)%'
     application_version: '1.9.1'
 
+    lti1p3.tool_client_id: '%env(resolve:LTI1P3_TOOL_CLIENT_ID)%'
     lti1p3.tool_host: '%env(resolve:LTI1P3_TOOL_HOST)%'
 
 services:

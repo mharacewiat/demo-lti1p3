@@ -30,7 +30,7 @@ lti1p3:
             deep_linking_url: null
     registrations:
         ms:
-            client_id: "qa"
+            client_id: "%lti1p3.tool_client_id%"
             platform: "local"
             tool: "ms"
             deployment_ids:
